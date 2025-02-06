@@ -1,11 +1,7 @@
-const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+// Set current year in footer 
+const yearSet = document.querySelector('footer > p > b');
+const currentDate = new Date(Date.now());
+
+if(yearSet){
+    yearSet.insertAdjacentText("afterbegin", currentDate.getFullYear());
+}
