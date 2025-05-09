@@ -2,7 +2,7 @@ import { type FC } from 'react';
 // import VirtualKeyboard from './virtual-keyboard/VirtualKeyboard';
 import Desk from './desk/Desk';
 import './room.css';
-
+import Window from '../window/Window';
 const Room: FC = () => {
 //   const [input, setInput] = useState('');
 //   const keyboardRef = useRef<any>(null);
@@ -52,9 +52,12 @@ const Room: FC = () => {
   return (
     <div className="room-container">
     {/* <h2 className="neon-title">Aimee's Project Portfolio </h2> */}
-
       <div className="desk-area">
+        <div className="stack-it">
+               <Window/>
+
         <Desk/>
+        </div>
         {/* <input
           className="retro-input"
           type="text"

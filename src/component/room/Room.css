@@ -1,15 +1,12 @@
 .room-container {
-    color: #f5f5f5;
     min-height: 100vh;
-    padding: 10% 50% 50% 50%; 
-    /* responsive */
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .room-container{
-    /* outline: 1px solid red; */
-    margin: 0px 100px 0px 20px; 
+    margin: 0px 500px 0px 10px;
+}
+   .stack-it:nth-of-type(1) > div{
+    position: absolute;
+    /* outline: 1px solid blue; */
+
+
   }
