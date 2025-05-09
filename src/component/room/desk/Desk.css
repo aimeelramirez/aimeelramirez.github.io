@@ -15,18 +15,18 @@
   
 }
 .desk-mask {
-  position: absolute;
-  top: 66%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 64%;
-  height: 60%;
-  background: rgba(23, 18, 18, 0.27);
-  border-radius: 8px;
-  z-index: 2;
-  pointer-events: none;
-  border-bottom: 1.5rem solid rgba(23, 18, 18, 0.27);
-  backdrop-filter: blur(4px); /* Optional: Glass effect */
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66%;
+    height: 61%;
+    background: rgba(23, 18, 18, 0.27);
+    border-radius: 8px;
+    z-index: 2;
+    pointer-events: none;
+    border-bottom: 1.5rem solid rgba(23, 18, 18, 0.1);
+    backdrop-filter: blur(4px);
 }
 
 .monitor {
@@ -120,7 +120,6 @@
   content: "projects";
 }
 
-
 .toggle-drawer {
   background-color: #574429;
   cursor: pointer;
@@ -130,13 +129,37 @@
   max-width: 10rem;
   min-height: 5rem;
   z-index: 2;
-  background-image: url(../../../assets/woodenpattern.png);
+  background-image: url(./src/assets/woodenpattern.png);
   background-position: center;
   background-position: left;
   background-size: 300%;
   bottom: 20px;
 }
+.sticky-note {
+  width: 80px;
+  height: 80px;
+  background: #fffb7d;
+  color: #333;
+  padding:.01rem;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: .6em;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transform: rotate(-3deg);
+  position: relative;
+  margin: 0px 6px 7px 8px;
+  line-height: 1.4;
+}
 
+.sticky-note::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(135deg, transparent 50%, #e6e657 50%);
+}
 .modal {
   position: absolute;
   /* top: 160px; */

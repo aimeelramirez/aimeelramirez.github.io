@@ -9,3 +9,7 @@
     flex-direction: column;
   }
   
+  .room-container{
+    /* outline: 1px solid red; */
+    margin: 0px 100px 0px 20px; 
+  }

@@ -13,13 +13,14 @@ const Desk: React.FC = () => {
   return (
     <div className="scene">
       <div className="container">
+      <div className="sticky-note">
+    <p>Thank you for stopping by!</p>
+  </div>
         <div className="monitor">
         
             <div className="css-typing">
           <p> Welcome to aimeelramirez.com</p>
-        
           <p>Interact with drawer to see projects.</p>
-          <p>Thank you for stopping by!</p>
           </div>
         </div>
         <div className="monitor-stand"></div>

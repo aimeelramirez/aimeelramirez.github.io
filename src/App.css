@@ -3,12 +3,11 @@
   margin: 0 auto; /* Center horizontally */
   padding: 2rem;
   text-align: center;
-  background: radial-gradient(#121204 60%, #0f0f03);
+  background: radial-gradient(#000000 60%, #252508);
 
 }
-body{
-  background: radial-gradient(#121204 60%, #0f0f03);
-}
+
+
 /* .logo {
   height: 6em;
   padding: 1.5em;
