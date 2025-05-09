@@ -1,30 +1,43 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Desk.css';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faArrowDown, faArrowUp, faCannabis, faEnvelope, faFolder, faLock, faLockOpen, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faConfluence } from '@fortawesome/free-brands-svg-icons';
+import { faDonate } from '@fortawesome/free-solid-svg-icons/faDonate';
+import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons/faPhoneFlip';
 const Desk: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [modal, setModal] = useState<'contact' | 'projects' | null>(null);
 
   return (
     <div className="scene">
-      <div className="desk">
+      <div className="container">
         <div className="monitor">
-          <div className="typing-container">Hi, I'm  Aimee.<br/>
-          <b>Welcome to aimeelramirez.com</b></div>
+        
+            <div className="css-typing">
+          <p> Welcome to aimeelramirez.com</p>
+        
+          <p>Interact with drawer to see projects.</p>
+          <p>Thank you for stopping by!</p>
+          </div>
         </div>
         <div className="monitor-stand"></div>
         <div className="monitor-base"></div>
-        <div className="container-drawer">
+        <div className="desk">
+        <div className="desk-mask"></div>
+  <div className="right-shelf">
+    <div className="shelf">
+    <div className="container-drawer">
         <motion.div
           className="drawer"
           animate={{ y: drawerOpen ? 0 : 50 }}
-          transition={{ type: 'spring', stiffness: 100 }}
+          transition={{ type: 'spring', stiffness: 20 }}
         >
-          <button className="drawer-btn" onClick={() => setModal('projects')}>📁 Projects</button>
+          <button className="drawer-btn" onClick={() => setModal('projects')}>{drawerOpen ? <FontAwesomeIcon icon={faArrowUp}/>:<FontAwesomeIcon icon={faArrowDown}/>}</button>
         </motion.div>
 
-        <div className="phone" onClick={() => setModal('contact')}>📞</div>
+        <div className="phone" onClick={() => setModal('contact')}><FontAwesomeIcon icon={faPhoneFlip}/></div>
 
         <AnimatePresence>
           {modal && (
@@ -65,9 +78,15 @@ const Desk: React.FC = () => {
         </AnimatePresence>
 
         <button className="toggle-drawer" onClick={() => setDrawerOpen(!drawerOpen)}>
-          {drawerOpen ? '🔒 Shut Drawer' : '📂 Open Drawer'}
+          {drawerOpen ? <FontAwesomeIcon icon={faLockOpen}/> : <FontAwesomeIcon icon={faLock}/>}
         </button>
         </div>
+    </div>
+  
+  </div>
+ 
+</div>
+
       </div>
     </div>
   );

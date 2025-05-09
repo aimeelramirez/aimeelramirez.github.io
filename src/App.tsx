@@ -1,13 +1,8 @@
-import './App.css'
-import Desk from './component/Desk.tsx'
+import React, { type FC } from 'react';
+import Room from './component/room/Room';
 
-function App() {
+const App: FC = () => {
+  return <Room />;
+};
 
-  return (
-   
-    <Desk/>
-    
-  )
-}
-
-export default App
+export default App;

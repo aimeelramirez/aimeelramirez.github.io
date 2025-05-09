@@ -1,13 +1,15 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto; /* Center horizontally */
   padding: 2rem;
   text-align: center;
+  background: radial-gradient(#121204 60%, #0f0f03);
+
 }
 body{
   background: radial-gradient(#121204 60%, #0f0f03);
 }
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -38,7 +40,4 @@ body{
 .card {
   padding: 2em;
 }
-
-.read-the-docs {
-  color: #888;
-}
+ */
