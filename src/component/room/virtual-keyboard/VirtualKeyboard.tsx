@@ -1,4 +1,4 @@
-import React, { type FC} from 'react';
+import { type FC} from 'react';
 import Keyboard from 'react-simple-keyboard';
 import 'react-simple-keyboard/build/css/index.css';
 import type { VirtualKeyboardProps } from '../../../interfaces/virtual-keyboard';

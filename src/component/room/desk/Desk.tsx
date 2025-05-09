@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Desk.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faArrowDown, faArrowUp, faCannabis, faEnvelope, faFolder, faLock, faLockOpen, faMailBulk } from '@fortawesome/free-solid-svg-icons';
-import { faConfluence } from '@fortawesome/free-brands-svg-icons';
-import { faDonate } from '@fortawesome/free-solid-svg-icons/faDonate';
+import { faArrowDown, faArrowUp, faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons';
+
 import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons/faPhoneFlip';
 const Desk: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
