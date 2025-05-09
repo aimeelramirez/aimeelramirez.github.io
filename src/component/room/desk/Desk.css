@@ -129,7 +129,7 @@
   max-width: 10rem;
   min-height: 5rem;
   z-index: 2;
-  background-image: url(./src/assets/woodenpattern.png);
+  background-image: url(/assets/desk.png);
   background-position: center;
   background-position: left;
   background-size: 300%;
