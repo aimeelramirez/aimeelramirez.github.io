@@ -1,12 +1,8 @@
 .room-container {
-    min-height: 100vh;
-    
-    display: flex;
-    margin: 0px 500px 0px 10px;
+  min-height: 100vh;
+  display: flex;
+  margin: 0px 500px 0px 10px;
 }
-   .stack-it:nth-of-type(1) > div{
-    position: absolute;
-    /* outline: 1px solid blue; */
-
-
-  }
+.stack-it:nth-of-type(1) > div {
+  position: absolute;
+}

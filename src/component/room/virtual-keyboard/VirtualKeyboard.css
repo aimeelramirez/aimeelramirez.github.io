@@ -1,52 +1,50 @@
 body {
-    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-    font-family: 'Press Start 2P', cursive;
-    color: #333;
-  }
-  
-  .ReactModal__Overlay {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-  }
-  
-  .ReactModal__Content {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-  }
-  
-  button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  span{
-    color: #333;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  font-family: "Press Start 2P", cursive;
+  color: #333;
+}
 
-  }
-  button:hover {
-    background-color: #555;
-  }
- .hg-button {
-    background-color: #a6c1ee;
-    border: 1px solid #333;
-    color: #333;
-  }
-  
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.ReactModal__Content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+span {
+  color: #333;
+}
+button:hover {
+  background-color: #555;
+}
+.hg-button {
+  background-color: #a6c1ee;
+  border: 1px solid #333;
+  color: #333;
+}
+
 .hg-button:hover {
-    background-color: #fbc2eb;
-  }
-  
+  background-color: #fbc2eb;
+}

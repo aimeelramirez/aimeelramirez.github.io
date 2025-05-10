@@ -11,14 +11,13 @@
   position: relative;
   margin:10px;
   z-index: 0;
-  outline: 2px solid coral;
+  /* outline: 2px solid coral; */
 }
 
 .content {
   position: relative;
-
   background-color: #2a8cb3;
-  width: 1000px;
+  width: 760px;
   height: 320px;
   overflow: hidden;
   border: 10px solid #fff;
@@ -34,7 +33,7 @@
 .tree {
   position: relative;
   top: 120px;
-  width: 400px;
+  width: 200px;
   height: 400px;
   background-image: radial-gradient(
     circle at 10px 10px,
@@ -48,7 +47,6 @@
 .content:before {
   content: "";
   position: absolute;
-
   background: transparent;
   box-shadow: transparent;
 }
@@ -56,17 +54,10 @@
 .content:after {
   position: absolute;
   content: "";
-
-  /* width: 60px;
-      height: 60px; */
-  /* background:00px 20px 55px 25px rgba(255, 255, 255, 0.85); */
-
-  /* border-radius: 50%; */
   background: transparent;
   box-shadow: transparent;
   box-shadow: 0px 250px 60px 200px rgba(255, 255, 255, 0.05),
     50px 250px 60px 80px rgba(255, 255, 255, 0.05),
-    /* box-shadow: 30px 30px #242423, 70px -15px #242423, 130px 20px #242423, 180px -5px #242423,240px 40px #242423, 220px -40px #333533,170px -20px #333533, 130px 10px #333533,90px -10px #333533,40px -30px #333533,10px -5px #333533; */
     100px 250px 55px 200px rgba(255, 255, 255, 0.05),
     190px 200px 60px 60px rgba(255, 255, 255, 0.8),
     300px 250px 50px 200px rgba(255, 255, 255, 0.75),
@@ -82,7 +73,6 @@
   }
   to {
     left: 100%;
-    /* transform: translateX(150vw); */
   }
 }
 

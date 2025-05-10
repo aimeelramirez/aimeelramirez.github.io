@@ -6,7 +6,7 @@ const App: FC = () => {
   <div className="home">
     <div className="inner"><Room /></div>
     
-<div className="inner"> <section><p>floor</p></section></div>
+<div className="inner"> <section></section></div>
   
    <div className="inner">
   <article>
@@ -24,12 +24,12 @@ const App: FC = () => {
       thinks. I’ve known it in empathy — in asking, how can I make this
       experience kinder?
     </p>
-    <blockquote>
+  
       <p>
         But for a long time, I didn't see myself reflected in the tech space. 
         It felt too cold, too closed — too far from heart.
       </p>
-    </blockquote>
+  
     <p>
       So I began to write my own path. One that included warmth, curiosity, and
       the audacity to believe technology can feel human — even kind.

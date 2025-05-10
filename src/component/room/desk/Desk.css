@@ -12,21 +12,20 @@
   background-size: 100%;
   border-radius: 18px;
   padding: 24px;
-  
 }
 .desk-mask {
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 66%;
-    height: 61%;
-    background: rgba(23, 18, 18, 0.27);
-    border-radius: 8px;
-    z-index: 2;
-    pointer-events: none;
-    border-bottom: 1.5rem solid rgba(23, 18, 18, 0.1);
-    backdrop-filter: blur(4px);
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66%;
+  height: 61%;
+  background: rgba(23, 18, 18, 0.27);
+  border-radius: 8px;
+  z-index: 2;
+  pointer-events: none;
+  border-bottom: 1.5rem solid rgba(23, 18, 18, 0.1);
+  backdrop-filter: blur(4px);
 }
 
 .monitor {
@@ -76,7 +75,6 @@
   bottom: 10rem;
 }
 .drawer {
-  
   position: relative;
   z-index: 1;
   margin: 48px auto 0;
@@ -88,7 +86,7 @@
 .drawer-btn {
   position: relative;
   background-color: #c2a768;
-    border: none;
+  border: none;
   border-radius: 12px 0px 18px 18px; /* Rounded bottom, flatter top */
   margin: 0 auto 8px;
   cursor: pointer;
@@ -140,21 +138,18 @@
   height: 80px;
   background: #fffb7d;
   color: #333;
-  padding:.01rem;
+  padding: 0.01rem;
   text-align: center;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-size: .6em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.6em;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   transform: rotate(-3deg);
   position: relative;
   margin: 0px 6px 7px 8px;
   line-height: 1.4;
-
-  top:30px;
-  left:0;
- 
+  top: 30px;
+  left: 0;
 }
-
 .sticky-note:hover::after {
   position: absolute;
   width: 40px;
@@ -163,20 +158,17 @@
   bottom: 0;
   right: 0;
   margin: 0px 20px 30px;
-    color:black;
-    content: 'Thank you for stopping by!';
-    background: none;
+  color: black;
+  content: "Thank you for stopping by!";
+  background: none;
 }
-.sticky-note::after{
- margin-top: 10px;
-  content:'';
+.sticky-note::after {
+  margin-top: 10px;
+  content: "";
   margin: 0px 15px 0px -4px;
-  
 }
 .modal {
   position: absolute;
-  /* top: 160px; */
-  /* left: 50%; */
   transform: translateX(-50%);
   width: 250px;
   background: #f8f7f2;
@@ -194,12 +186,12 @@
   line-height: 1.4;
   mix-blend-mode: none;
 }
-.css-typing{
+.css-typing {
   margin: -10px;
 }
 .css-typing p {
-  border-right: .15em solid green;
-  font-family:monospace;
+  border-right: 0.15em solid green;
+  font-family: monospace;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
@@ -226,8 +218,9 @@
 .css-typing p:nth-child(3) {
   width: 100%;
   opacity: 0;
-  -webkit-animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
-  animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation: type3 2s steps(40, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 2s steps(40, end), blink 0.5s step-end infinite alternate;
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
@@ -239,7 +232,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid greenyellow;
+    border-right: 0.15em solid greenyellow;
   }
   100% {
     border: none;
@@ -251,7 +244,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid greenyellow;
+    border-right: 0.15em solid greenyellow;
   }
   100% {
     border: none;
@@ -266,7 +259,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid greenyellow;
+    border-right: 0.15em solid greenyellow;
   }
   100% {
     opacity: 1;
@@ -282,7 +275,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid greenyellow;
+    border-right: 0.15em solid greenyellow;
   }
   100% {
     opacity: 1;
