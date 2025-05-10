@@ -8,7 +8,7 @@ import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons/faPhoneFlip';
 const Desk: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [modal, setModal] = useState<'contact' | 'projects' | null>(null);
-
+console.log(JSON.stringify(modal))
   return (
     <div className="scene">
       <div className="container">
@@ -47,7 +47,7 @@ const Desk: React.FC = () => {
                       exit={{ opacity: 0, scale: 0.9 }}
                     >
                       <button className="close-btn" onClick={() => setModal(null)}>✖</button>
-
+                      
                       {modal === 'contact' && (
                         <div className="modal-content">
                           <a href="mailto:support@aimeelramirez.dev" target="_blank" rel="noopener noreferrer">
