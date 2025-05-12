@@ -1,14 +1,39 @@
-import { type FC } from 'react';
-import Room from './component/room/Room';
+import { useEffect, useState, type FC, type PropsWithChildren } from 'react';
+import { useSpring, animated } from '@react-spring/web';
+import Hero from './Hero';
+import Footer from './Footer';
+import ThemeToggle from './ThemeToggle';
+import './App.css';
+
+// Fix TypeScript issue with children/className on animated.div
+const AnimatedDiv: FC<PropsWithChildren<{ style: any; className?: string }>> = animated.div;
 
 const App: FC = () => {
+    const [theme, setTheme] = useState<'light' | 'dark'>(
+    () => (localStorage.getItem('theme') as 'light' | 'dark') || 'light'
+  );
+
+  // Update body attribute and save to localStorage
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  // Animate color theme transition using react-spring
+  const themeTransition = useSpring({
+    backgroundColor: theme === 'dark' ? '#1e1e1e' : '#ffffff',
+    color: theme === 'dark' ? '#eeeeee' : '#333333',
+    config: { tension: 170, friction: 26 },
+  });
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
   return (
-    <div className="home">
-      <div className="inner"><Room /></div>
-
-      <div className="inner"> <section></section></div>
-
-      <div className="inner">
+   <AnimatedDiv style={themeTransition} className="app-container">
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+     <main className="bio">
+       <Hero />
         <article>
           <div className="title">
             <h1>About Me</h1>
@@ -58,8 +83,12 @@ const App: FC = () => {
             build tools that feel like home.
           </p>
         </article>
-      </div>
-    </div>
+      </main>
+      
+
+      <Footer />
+ 
+      </animated.div>
   );
 }
 
