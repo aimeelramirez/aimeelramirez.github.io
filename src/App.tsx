@@ -88,7 +88,7 @@ const App: FC = () => {
 
       <Footer />
  
-      </animated.div>
+      </AnimatedDiv>
   );
 }
 
