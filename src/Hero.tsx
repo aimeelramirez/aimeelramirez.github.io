@@ -1,29 +1,22 @@
 import type { FC, PropsWithChildren } from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import './index.css'
+import './index.css';
+
+const AnimatedDiv = animated.div as FC<PropsWithChildren<{ style: any; className?: string }>>;
 
 const Hero: FC = () => {
- // useSpring returns animated style values — here we fade in and slide up slightly
   const fadeIn = useSpring({
-    from: { opacity: 0, y: -20 }, // Start transparent and shifted up
-    to: { opacity: 1, y: 0 },     // Animate to fully visible and original position
-    delay: 200,                   // Start animation after 200ms
+    from: { opacity: 0, transform: 'translateY(20px)' },
+    to: { opacity: 1, transform: 'translateY(0)' },
+    config: { tension: 170, friction: 26 },
+    delay: 200,
   });
-
-  /**
-   * TypeScript Fix:
-   * react-spring's `animated.div` doesn't automatically know it accepts `children`,
-   * so we explicitly cast it as a React Functional Component (FC) that:
-   *  - Accepts children (PropsWithChildren)
-   *  - Accepts `style` (required for animation)
-   *  - Optionally accepts `className`**/
-
-  const AnimatedDiv = animated.div as FC<PropsWithChildren<{ style: any; className?: string }>>;
-  
 
   return (
     <AnimatedDiv className="hero" style={fadeIn}>
-      <img src="./src/assets/aimee.jpg" alt="Aimee Ramirez" className="hero-img" />
+      {/* Optional image */}
+      {/* <img src="/aimee.jpg" alt="Aimee Ramirez" className="hero-img" /> */}
+      <p>Welcome in.</p>
       <h1>Hi, I'm Aimee</h1>
       <p>Frontend/API Developer | Digital Creator</p>
     </AnimatedDiv>

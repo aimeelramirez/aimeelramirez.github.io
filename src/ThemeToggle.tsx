@@ -1,6 +1,7 @@
-import {type FC} from 'react';
+import type { FC } from 'react';
 import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 type ThemeToggleProps = {
   theme: 'light' | 'dark';
   toggleTheme: () => void;
@@ -9,7 +10,7 @@ type ThemeToggleProps = {
 const ThemeToggle: FC<ThemeToggleProps> = ({ theme, toggleTheme }) => {
   return (
     <button onClick={toggleTheme} className="theme-toggle">
-      {theme === 'light' ? <FontAwesomeIcon icon={faMoon}/> :  <FontAwesomeIcon icon={faSun}/>}
+     {theme === 'light' ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
     </button>
   );
 };
