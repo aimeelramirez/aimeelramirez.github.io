@@ -12,4 +12,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/', // no subdirectory needed
   plugins: [react()],
+  
 })
