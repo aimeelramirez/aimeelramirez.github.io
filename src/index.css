@@ -41,28 +41,8 @@ svg {
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
-
-  /* background: linear-gradient(
-    270deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet,
-    red
-  ); */
-  /* background-size: 1600% 1600%;
-  animation: rainbowAura 100s linear infinite;
-  width: 100%;
-  height: 100vh;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
+
 @keyframes rainbowAura {
   0% {
     background-position: 0% 50%;
@@ -74,6 +54,7 @@ svg {
     background-position: 0% 50%;
   }
 }
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -82,15 +63,14 @@ a {
 a:hover {
   color: #535bf2;
 }
+
 html,
 body {
   margin: 0 auto;
   display: flex;
   height: 100%;
-  /* place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
 }
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -102,91 +82,27 @@ body {
   padding: 2rem;
 }
 
-/* Mobile styles */
-/* @media (max-width: 480px) {
-  body {
-    background-color:#1e2326;
-    font-size: 14px;
-    display: flex;
-    width: 100%;
-
-    button {
-      width: 100%;
-    }
-    .drawer-btn {
-      margin: 0px 4px 1px 0px;
-    }
-    .drawer {
-      position: relative;
-      z-index: 1;
-      margin: 48px auto 0;
-      display: flex;
-      align-items: center;
-    }
-    .monitor-stand {
-      margin: 0 auto 0 160px;
-    }
-    .monitor-base {
-      margin: 0 auto 0 106px;
-    }
-    .phone {
-      position: absolute;
-      bottom: 270px;
-      left: -11px;
-    }
-    section {
-      margin: 470px 0px 0px -0px;
-      width: 100%;
-      min-width: 1000px !important;
-    }
-  }
-} */
-
-/* Tablet styles */
-/* @media (min-width: 481px) and (max-width: 800px) {
-  body {
-    font-size: 16px;
-  }
-  section {
-    width: 100%;
-    min-width: 1000px !important;
-  }
-} */
-
-/* Desktop styles */
-/* @media only screen and (min-width: 800px) {
-  body {
-    background-color: rgb(36, 36, 36);
-    font-size: 18px;
-  }
-  section {
-    width: 100%;
-    min-width: 1000px !important;
-    margin: 470px 0px 0px -0px;
-  }
-} */
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 section {
   margin: 470px 0px 0px -200px;
   height: 500px;
   width: 100%;
-  /* color: white; */
   border-bottom: 5px solid grey;
-  /* background: rgb(43, 13, 13); */
 }
+
 .home:nth-of-type(1) > div {
-  /* margin: 0 auto; */
   display: flex;
   width: 100%;
 }
+
 article > * {
-  /* background: white; */
   width: 100%;
 }
+
 .inner {
   height: 100px;
   width: 100%;
@@ -201,54 +117,35 @@ article {
   gap: 1em;
   column-rule: 2px dashed #666;
   height: 50em;
-  /* background-color: white;
-  color: black; */
 }
 
-/* .title {
-  column-span: all;
-  display: flex;
-  align-items: baseline;
-  gap: 1em;
-  flex-wrap: wrap;
-  color: black;
-} */
- @media (max-width: 480px) {
-  html{
-
-  }
+@media (max-width: 480px) {
   article {
-      column-count: unset;
-  column-width: unset;
-  column-gap: unset;
-  column-rule: unset;
-  widows: unset;
-  orphans: unset;
+    column-count: unset;
+    column-width: unset;
+    column-gap: unset;
+    column-rule: unset;
+    widows: unset;
+    orphans: unset;
   }
-  article{
-        width: 100%;
-        flex-direction: row;
-  gap: 1.5rem;
 
-  }
-  article > p{
+  article {
     width: 100%;
-    /* flex-direction: column;
-    border-left: 2px dashed #666; */
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  article > p {
+    width: 100%;
     border-top: 2px dashed #666;
     padding: 10px;
-    
   }
-  footer{
 
+  footer {
     position: relative;
   }
- }
-/* article > p {
-  margin: 0 0 1em 0;
-  line-height: 1.4;
-  color: black;
-} */
+}
+
 .inner:nth-of-type(5),
 .footer {
   width: 100%;
@@ -257,17 +154,52 @@ article {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #1e2326;
-  color: white;
-
 }
-
+h1,
+a{color:inherit;}
 .footer a {
-  color: white;
+  color:inherit;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 .footer a:hover {
   color: #aaa;
+}
+
+/* ✅ NEW STYLES for legal links */
+.footer-legal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.divider {
+  color: #888;
+  font-weight: 300;
+}
+.footer.dark {
+  background-color: #1e2326;
+  color: white;
+}
+
+.footer.light {
+  background-color: #f9f9f9;
+  color: #1e2326;
 }

@@ -1,6 +1,6 @@
 import type { FC, PropsWithChildren } from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import './index.css';
+import './index.css'; // Make sure styles are scoped here or global
 
 const AnimatedDiv = animated.div as FC<PropsWithChildren<{ style: any; className?: string }>>;
 
@@ -14,11 +14,14 @@ const Hero: FC = () => {
 
   return (
     <AnimatedDiv className="hero" style={fadeIn}>
-      {/* Optional image */}
-      {/* <img src="/aimee.jpg" alt="Aimee Ramirez" className="hero-img" /> */}
-      <p>Welcome in.</p>
-      <h1>Hi, I'm Aimee</h1>
-      <p>Frontend/API Developer | Digital Creator</p>
+      <div className="hero-left">
+        <img src="/aimee.jpg" alt="Aimee Ramirez" className="hero-img" />
+      </div>
+      <div className="hero-right">
+        <p>Welcome in.</p>
+        <h1>Hi, I'm Aimee</h1>
+        <p>Frontend/API Developer | Digital Creator</p>
+      </div>
     </AnimatedDiv>
   );
 };

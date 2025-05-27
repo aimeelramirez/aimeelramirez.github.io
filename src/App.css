@@ -1,59 +1,80 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
   background-color: #1e2326;
 }
+
+/* Hero layout container */
 .hero {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   padding: 2rem;
-   margin-bottom: 1rem;
 }
 
-/* .hero-img {
-  width: 200px;
-  border-radius: 50%;
+/* Left: Image */
+.hero-left img.hero-img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1rem;
-} */
+}
 
-.hero h1 {
-  font-size: 2rem;
+/* Right: Text */
+.hero-right {
+  max-width: 480px;
+  color:inherit;
+  text-align: left;
+}
+
+.hero-right h1 {
+  font-size: 2.5rem;
   margin: 0.5rem 0;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #666;
+.hero-right p {
+  font-size: 1.25rem;
+  color: #ccc;
 }
-#app-content{
-  display: flex;
+
+/* Responsive: stack image/text */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+  }
 }
-.hero, 
-img{
-  justify-items: center;
-  display: inline;
-}
-.inner{
-  flex-direction: row;
-  height: 100%;
-}
-.inner > *{
-  flex-direction: row;
-  height: 100%;
-}
+
+/* Theme toggle */
 .theme-toggle {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 2rem;
   color: inherit;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Utility override: Remove incorrect flex settings */
+#app-content,
+.inner,
+.inner > * {
+  display: block;
+  flex-direction: unset;
+  height: auto;
 }
