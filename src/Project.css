@@ -29,12 +29,15 @@
   text-align: center;
   padding: 1rem;
   cursor: pointer;
+  margin: 4rem;
   transition: box-shadow 0.3s ease;
+  
 }
 
 /* Apply light theme only to card-stack */
 .card.light {
   background-color: #fff;
+  
 }
 
 /* Apply dark theme only to card-stack */
@@ -44,6 +47,7 @@
 
 .card.active {
   border: 2px solid rgb(20, 233, 248);
+  z-index: 3 !important;
 }
 
 .card-icon {

@@ -15,6 +15,7 @@ const AnimatedDiv = React.forwardRef<HTMLDivElement, AnimatedProps<any>>((props)
 });
 
 interface ProjectItem {
+    id:number;
     title: string;
     description: string;
     link: string;
@@ -24,7 +25,8 @@ interface ProjectItem {
 }
 
 const projects: ProjectItem[] = [
-    {
+    {   
+       id: 0,
         title: 'Loop Detector App',
         description: `A real-time computer vision tool built with Flask, OpenCV, and MediaPipe.
 It detects hand loops using gesture recognition. The backend is deployed on Render, and the frontend is styled with vanilla HTML/CSS.`,
@@ -35,6 +37,7 @@ It detects hand loops using gesture recognition. The backend is deployed on Rend
 
     },
     {
+       id: 1,
         title: 'Portfolio Site',
         description: `This site is built with React and TypeScript, featuring animated sliders, responsive layout, and clear structure.
 Deployed to GitHub Pages and fully optimized for mobile.`,
@@ -45,6 +48,7 @@ Deployed to GitHub Pages and fully optimized for mobile.`,
 
     },
     {
+       id: 2,
         title: 'aimeelramirez.dev',
         description: `A clean, static site hosted on cPanel with optional PHP/MySQL backend integration.
 Demonstrates traditional hosting approaches alongside modern projects.`,
@@ -67,7 +71,7 @@ const Project: FC = () => {
       const offset = i - activeIndex;
       return {
         transform: `perspective(1200px) rotateY(${offset * 10}deg) translateX(${offset * 130}px) scale(${i === activeIndex ? 1.08 : 0.94})`,
-        zIndex: i === activeIndex ? i : 0,
+        zIndex: i === projects[i].id && projects[i].id == 2 ? projects[i].id - 2 : projects[i].id,
         config: { tension: 170, friction: 26, mass: 1.2 },
       };
     })
