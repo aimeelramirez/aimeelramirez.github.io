@@ -1,0 +1,99 @@
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-family: sans-serif;
+}
+
+
+.card-stack {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 160px;
+  height: 220px;
+  background-color: #1e2326;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Apply light theme only to card-stack */
+.card.light {
+  background-color: #fff;
+}
+
+/* Apply dark theme only to card-stack */
+.card.dark {
+  background-color: #1e2326;
+}
+
+.card.active {
+  border: 2px solid rgb(20, 233, 248);
+}
+
+.card-icon {
+  color: light dark;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.project-details {
+  max-width: 600px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.project-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 0.95rem;
+  /* color: #555; */
+  white-space: pre-line;
+  margin-bottom: 8px;
+}
+
+.repo-link {
+  font-size: 0.85rem;
+  color: #555;
+  text-decoration: underline;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background: #eee;
+    color: #555;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

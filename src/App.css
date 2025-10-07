@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1e2326;
+}
+
+/* Hero layout container */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Left: Image */
+.hero-left img.hero-img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Right: Text */
+.hero-right {
+  max-width: 480px;
+  color:inherit;
+  text-align: left;
+}
+
+.hero-right h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-right p {
+  font-size: 1.25rem;
+  color: #ccc;
+}
+
+/* Responsive: stack image/text */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Theme toggle */
+.theme-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 2rem;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Utility override: Remove incorrect flex settings */
+#app-content,
+.inner,
+.inner > * {
+  display: block;
+  flex-direction: unset;
+  height: auto;
+}
