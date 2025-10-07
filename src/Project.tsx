@@ -15,49 +15,49 @@ const AnimatedDiv = React.forwardRef<HTMLDivElement, AnimatedProps<any>>((props)
 });
 
 interface ProjectItem {
-    id:number;
-    title: string;
-    description: string;
-    link: string;
-    repo?: string;
-    icon: IconDefinition;
-    image: string;
+  id: number;
+  title: string;
+  description: string;
+  link: string;
+  repo?: string;
+  icon: IconDefinition;
+  image: string;
 }
 
 const projects: ProjectItem[] = [
-    {   
-       id: 0,
-        title: 'Loop Detector App',
-        description: `A real-time computer vision tool built with Flask, OpenCV, and MediaPipe.
+  {
+    id: 0,
+    title: 'Loop Detector App',
+    description: `A real-time computer vision tool built with Flask, OpenCV, and MediaPipe.
 It detects hand loops using gesture recognition. The backend is deployed on Render, and the frontend is styled with vanilla HTML/CSS.`,
-        link: 'https://aimeelramirez.com/loop-detector-app/frontend/',
-        repo: 'https://github.com/aimeelramirez/loop-detector-app',
-        icon: faMagnifyingGlass,
-        image: 'https://repository-images.githubusercontent.com/971783856/249437d5-17ba-428d-a306-de0cd3557185'
+    link: 'https://aimeelramirez.com/loop-detector-app/frontend/',
+    repo: 'https://github.com/aimeelramirez/loop-detector-app',
+    icon: faMagnifyingGlass,
+    image: 'https://repository-images.githubusercontent.com/971783856/249437d5-17ba-428d-a306-de0cd3557185'
 
-    },
-    {
-       id: 1,
-        title: 'Portfolio Site',
-        description: `This site is built with React and TypeScript, featuring animated sliders, responsive layout, and clear structure.
+  },
+  {
+    id: 1,
+    title: 'Portfolio Site',
+    description: `This site is built with React and TypeScript, featuring animated sliders, responsive layout, and clear structure.
 Deployed to GitHub Pages and fully optimized for mobile.`,
-        link: 'https://aimeelramirez.com',
-        repo: 'https://github.com/aimeelramirez/aimeelramirez.github.io',
-        icon: faCode,
-        image: '/aimee.jpg'
+    link: 'https://aimeelramirez.com',
+    repo: 'https://github.com/aimeelramirez/aimeelramirez.github.io',
+    icon: faCode,
+    image: '/aimee.jpg'
 
-    },
-    {
-       id: 2,
-        title: 'aimeelramirez.dev',
-        description: `A clean, static site hosted on cPanel with optional PHP/MySQL backend integration.
+  },
+  {
+    id: 2,
+    title: 'aimeelramirez.dev',
+    description: `A clean, static site hosted on cPanel with optional PHP/MySQL backend integration.
 Demonstrates traditional hosting approaches alongside modern projects.`,
-        link: 'https://aimeelramirez.dev',
-        repo: '_blank',
-        icon: faServer,
-        image: 'https://kinsta.com/wp-content/uploads/2017/12/what-is-cpanel-1024x512.png'
+    link: 'https://aimeelramirez.dev',
+    repo: '_blank',
+    icon: faServer,
+    image: 'https://kinsta.com/wp-content/uploads/2017/12/what-is-cpanel-1024x512.png'
 
-    },
+  },
 ];
 
 
