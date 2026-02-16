@@ -19,8 +19,8 @@ const Hero: FC = () => {
       </div>
       <div className="hero-right">
         <p>Welcome in.</p>
-        <h1>Hi, I'm Aimee</h1>
-        <p>Frontend/API Developer | Digital Creator</p>
+        <h1>Hai, I'm Aimee</h1>
+        <p>Contributor | Mother | Developer | Digital Creator </p>
       </div>
     </AnimatedDiv>
   );

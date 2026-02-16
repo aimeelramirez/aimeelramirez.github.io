@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faMagnifyingGlass,
   faCode,
-  faServer,
+  faLaptop,
   type IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from './context/ThemeContext'; // ✅ Context
@@ -49,13 +49,12 @@ Deployed to GitHub Pages and fully optimized for mobile.`,
   },
   {
     id: 2,
-    title: 'aimeelramirez.dev',
-    description: `A clean, static site hosted on cPanel with optional PHP/MySQL backend integration.
-Demonstrates traditional hosting approaches alongside modern projects.`,
-    link: 'https://aimeelramirez.dev',
+    title: 'GitHub Projects',
+    description: `Hosting Personal and Professional Projects. A collection of repositories showcasing my work in web development, computer vision, and more. Visit my GitHub to explore code samples, contributions, and projects.`,
+    link: 'https://github.com/aimeelramirez',
     repo: '_blank',
-    icon: faServer,
-    image: 'https://kinsta.com/wp-content/uploads/2017/12/what-is-cpanel-1024x512.png'
+    icon: faLaptop,
+    image: 'https://avatars.githubusercontent.com/u/971783856?v=4'
 
   },
 ];

@@ -8,6 +8,10 @@ import {
   faTiktok,
   faInstagram,
   faPinterest,
+  faDev,
+  faSquareSteam,
+  faSpaceAwesome
+
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import { useTheme } from './context/ThemeContext';
@@ -17,6 +21,16 @@ const Footer: FC = () => {
 
   return (
     <footer className={`footer ${theme === 'dark' ? 'dark' : 'light'}`}>
+      <a href="https://checkr.com/profiles/aimee-ramirez-2715" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faSpaceAwesome} /> Checkr
+      </a>
+      <a href="https://fullsail-csm.symplicity.com/profiles/alramirez1" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faDev} /> Career Sync
+      </a>
+        <a href="https://fullsail-csm.symplicity.com/profiles/alramirez1" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faSquareSteam} /> Steam      
+        </a>
+    
       <a href="https://x.com/aimeelramirez" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faXTwitter} /> X
       </a>
