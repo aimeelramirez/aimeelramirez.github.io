@@ -27,7 +27,7 @@ const Footer: FC = () => {
       <a href="https://fullsail-csm.symplicity.com/profiles/alramirez1" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faDev} /> Career Sync
       </a>
-        <a href="https://fullsail-csm.symplicity.com/profiles/alramirez1" target="_blank" rel="noopener noreferrer">
+        <a href="https://steamcommunity.com/profiles/76561199476221658" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faSquareSteam} /> Steam      
         </a>
     
